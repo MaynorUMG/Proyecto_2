@@ -274,6 +274,7 @@ int main (){
 		case 8: {
 			string sentence, sentence2 = "", sentence3 = "";
     		cout << "Ingrese texto y presione enter para continuar: ";
+    		cout << endl;
     		getline(cin, sentence);
     		for (int i = 0; i < sentence.length(); i++) {
         		if (sentence[i] != ' '){
@@ -284,7 +285,8 @@ int main (){
         		sentence2 += tolower(sentence3[i]);
     		}
     		if (sentence3 == sentence2) {
-    			cout << sentence << "Es un palindromo" << endl;
+    			cout << sentence << " Es un palindromo " << endl;
+    			cout << endl;
 			}else{
         	cout << sentence << " No es un palindromo" << endl;
         }
